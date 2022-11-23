@@ -1,0 +1,28 @@
+* {
+    box-sizing: border-box;
+}
+p.R{
+    background-color: rgb(226, 226, 226);
+    text-align: right;
+}
+.box{
+    float:left;
+    width: 50%;
+    padding: 1em;
+    border:1px solid black;
+}
+.bigL{
+    float:left;
+    width: 50px;
+    font-size: 4em;
+}
+.imgR{float:right}
+.groupB{
+    clear:both;
+    border:1px solid black;
+    padding: 1em;
+}
+.athugid{
+    text-align: center;
+    background-color: yellow;
+}
