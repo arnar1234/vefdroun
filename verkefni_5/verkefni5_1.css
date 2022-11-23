@@ -1,0 +1,104 @@
+* {
+    box-sizing: border-box;
+}
+
+body
+{
+    background-color: rgb(58, 19, 14);
+    margin: 0 auto;
+}
+
+img
+{
+    max-width: 100%;
+    height: auto;
+}
+
+header>h1
+{
+    color: rgb(241, 176, 72);
+    text-align: center;
+    text-shadow: 0px -1px 8px red;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 40px;
+
+    margin: 0;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+main
+{
+    display: grid;
+    margin: 0;
+    background-image: linear-gradient(red, rgb(111, 0, 0));
+    padding: 20px;
+}
+
+.stuff
+{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+p{color: white; font-size: 25px}
+
+section>h3
+{
+    color:rgb(241, 176, 72);
+    font-size: 30px;
+}
+
+.imageDiv{background-color: rgb(76, 9, 3);}
+.imgFeddy{margin-bottom: -4px;}
+
+.feddy
+{
+    margin: 0;
+    padding-bottom: 10px;
+}
+
+.myndContainer
+{
+    display: grid;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.mynd>p
+{
+    background-color:rgb(73, 7, 5); 
+    padding: 0;
+    margin-top: -4px;
+}
+
+.img
+{
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (min-width: 30em)
+{
+    .stuff{grid-template-columns: 1fr;}
+}
+
+@media screen and (min-width: 48em)
+{
+    .stuff{grid-template-columns: 1fr 1fr; gap: 20px}
+    .myndContainer
+    {
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+}
+
+@media screen and (min-width: 80em)
+{
+    .myndContainer
+    {
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 20px;
+    }
+    main{padding-left: 12em; padding-right: 12em;}
+}
