@@ -1,0 +1,265 @@
+* {
+    box-sizing: border-box;
+}
+
+body
+{
+    background-image: linear-gradient(#2357b3, #0C2448);
+    margin: 0 auto;
+    width: 90%;
+}
+
+.h1
+{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+
+    font-size: 2.2em;
+    margin-bottom: 0.3em;
+
+    text-align: center;
+}
+a:link{color: white}
+a:visited{color: rgb(232, 232, 232)}
+a
+{
+    font-family: 'Lato', sans-serif;
+    text-decoration: none;
+}
+.verkefni
+{
+    display: none;
+    margin-bottom: 5em;
+    text-align: right;
+    color:rgb(218, 218, 62);
+}
+
+.topnav
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+    margin-bottom: 1em;
+}
+
+.outermenu{padding-top: 1em;}
+.innermenu
+{
+    display: grid;
+    gap: 0;
+    background-color: #3167CC;
+
+    padding: 0;
+
+    grid-template-columns: 1fr;
+}
+
+.aMenu
+{
+    display: grid;
+    text-align: center;
+    align-items: center;
+    justify-content: space-evenly;
+
+    padding: 1em;
+}
+
+.aMenu + .aMenu
+{
+    border-top: 1px solid rgb(137, 170, 201);
+}
+
+.yellowboxstuff
+{
+    background-image: linear-gradient(rgb(225, 195, 96), rgb(222, 220, 199));
+    margin-left: -5.5%;
+    margin-right: -5.5%;
+    padding-left: 5.5%;
+    padding-right: 5.5%;
+}
+
+.gridmain
+{
+    padding-top: 3em;
+}
+
+.litaskal
+{
+    font-size: 2em;
+    padding-bottom: 1em;
+    font-family: 'Montserrat', sans-serif;
+
+    margin: 0;
+}
+
+.litaskal2
+{
+    font-size: 2em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    font-family: 'Montserrat', sans-serif;
+
+    margin: 0;
+}
+
+p{font-family: 'Lato', sans-serif;}
+
+blockquote
+{
+    background-color: rgba(230, 231, 218, 0.258);
+    padding: 2em;
+    margin: 0;
+}
+
+.lorem{padding-bottom: 3em;}
+.lorem2{padding-bottom: 2em;}
+.lorem2>a
+{
+    padding: 0.2em;
+    color: black;
+}
+
+.gridfooter
+{
+    font-family: 'Lato', sans-serif;
+    color: white;
+}
+.dlistar{list-style-type: none;}
+
+.copy
+{
+    font-family: 'Lato', sans-serif;
+    color: white;
+
+    margin-top: 10.2em;
+}
+
+.abs
+{
+    font-size: 2.5em;
+    padding: 0.05em;
+    padding-right: 0.4em;
+    padding-left: 0.4em;
+    border-radius: 50%;
+    background-color: white;
+    position: fixed;
+    bottom: 1em;
+    right: 1em;
+}
+
+@media screen and (min-width: 37.5em)
+{
+    .aMenu
+    {
+        border-left: 1px solid rgb(137, 170, 201);
+        border-top: 1px solid rgb(137, 170, 201);
+        padding: 0.6em;
+    }
+    .innermenu{grid-template-columns: 1fr 1fr 1fr;}
+    .gridfooter
+    {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1em;
+
+        margin-top: 1em
+    }
+}
+
+@media screen and (min-width: 48em)
+{
+    .gridfooter
+    {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1em;
+
+        margin-top: 1em
+    }
+}
+
+@media screen and (min-width: 60em)
+{
+    body
+    {
+        background-image: linear-gradient(#2357b3, #0C2448);
+        margin: 0 auto;
+        width: 60%;
+    }
+
+    .verkefni{display: block;}
+
+    .h1
+    {
+        color: white;
+    
+        font-size: 2.2em;
+        margin-bottom: 1em;
+    
+        text-align: left;
+    }
+
+    .backgrunnslitir
+    {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .topnav
+    {
+        display: flex;
+        gap: 2em;
+        float: right;
+        position: relative;
+        top: 2.6em;
+        margin-bottom: 6em;
+    }
+
+    .innermenu{grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;}
+
+    .aMenu + .aMenu
+    {
+        border-left: 1px solid white;
+        border-top: 0px none;
+        padding: 0.2em;
+    }
+
+    .yellowboxstuff
+    {
+        background-image: linear-gradient(rgb(225, 195, 96), rgb(222, 220, 199));
+        margin-left: -33.35%;
+        margin-right: -33.35%;
+        padding-left: 33.35%;
+        padding-right: 33.35%;
+    }
+
+    .gridmain
+    {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2em;
+        padding-top: 3em;
+    }
+
+    .litaskal
+    {
+        font-size: 2em;
+        padding-bottom: 1em;
+
+        margin: 0;
+
+        padding-top: 0.4em;
+    }
+
+    .gridfooter
+    {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1em;
+
+        margin-top: 1em
+    }
+
+    .copy{margin-top: 9.5em;}
+}
