@@ -1,0 +1,5 @@
+body{background-color: rgb(36, 36, 36); display: grid;}
+*{text-align: center;}
+
+h1{color: white;}
+a{color: white; text-decoration: none; background-color: rgb(68, 68, 68); padding: 5px; border: 1px solid rgb(255, 255, 255);}
