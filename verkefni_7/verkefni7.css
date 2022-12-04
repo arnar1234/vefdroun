@@ -1,0 +1,148 @@
+* {
+    box-sizing: border-box;
+}
+
+body
+{
+    background-image: url(../verkefni_7/images/background.png);
+    min-height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+}
+header{text-align: center; font-size: 60px; padding: 20px; font-family: 'Poppins', sans-serif; color: white;}
+
+nav
+{
+    display: grid;
+    margin: 0 auto;
+    margin-bottom: 0;
+    justify-content: space-evenly;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+}
+
+nav a
+{
+    list-style-type: none;
+    text-decoration: none;
+    color:rgb(172, 172, 172);
+    text-align: center;
+    font-size: 22px;
+    padding: 5px;
+    margin: 5px;
+    border: 1px solid rgb(190, 190, 190);
+    background-color: rgb(13, 30, 52);
+    border-radius: 10px;
+    font-family: 'Poppins', sans-serif;
+    transition: all .3s ease;
+}
+
+nav a:hover
+{
+    color:white;
+    border: 1px solid white;
+    background-color: rgb(15, 33, 56);
+}
+
+main{background-color: rgb(33, 63, 88); margin: 0 auto; padding-left: 20px; padding-right: 20px; padding-bottom: 5px; margin-bottom: 0px;}
+main p{font-size: 30px; padding-top: 20px; padding-bottom: 0px; color: white; font-family: 'Poppins', sans-serif;}
+p a:link{color: rgb(60, 102, 207)}
+p a:visited{color: rgb(60, 102, 207)}
+p a:hover{color: rgb(96, 132, 223)}
+p a:active{color: rgb(201, 204, 211)}
+h1{color:white; padding-bottom: 0px; margin-bottom: 0px;}
+.heimildir{text-align: center;}
+
+.Middle
+{
+    max-width: 640px;
+    max-height: 640px;
+
+    display: block;
+    margin: 0 auto;
+}
+
+.container
+{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 100%;
+}
+
+.gameframe
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.Text-image p
+{
+    font-size: 25px;
+}
+
+.Text-image
+{
+    display: grid;
+}
+
+.Text-image
+{
+    display: grid;
+    align-items: center;
+    gap: 15px;
+}
+
+.Image
+{
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+footer
+{
+    padding: 20px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    margin: 0 auto;
+    background-color:rgb(29, 48, 77);
+    color: white;
+}
+
+footer p{font-family: 'Poppins', sans-serif;}
+footer p span{float: right;}
+
+@media screen and (min-width: 40em)
+{
+    nav
+    {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .Text-image{grid-template-columns: 2fr 1fr;}
+
+    .Text-image p
+    {
+        font-size: 30px;
+    }
+
+    .Image
+    {
+        padding-bottom: 0px;
+    }
+}
+
+@media screen and (min-width: 80em)
+{
+    footer{width: 60%;}
+    main{width: 60%;}
+    nav{width: 60%;}
+}
