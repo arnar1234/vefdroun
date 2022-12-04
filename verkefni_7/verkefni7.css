@@ -53,7 +53,7 @@ p a:link{color: rgb(60, 102, 207)}
 p a:visited{color: rgb(60, 102, 207)}
 p a:hover{color: rgb(96, 132, 223)}
 p a:active{color: rgb(201, 204, 211)}
-h1{color:white; padding-bottom: 0px; margin-bottom: 0px;}
+h1{color:white; padding-bottom: 0px; margin-bottom: 0px; font-family: 'Poppins', sans-serif;}
 .heimildir{text-align: center;}
 
 .Middle
